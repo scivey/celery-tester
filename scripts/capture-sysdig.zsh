@@ -6,7 +6,7 @@
 ca-lib-load 'sysdig' 'pidfile'
 
 __runit() {
-    ca-sysdig-watch-worker $@
+    ca-sysdig-watch-worker-persistent $@
 }
 
 __runit $@
